@@ -1,2 +1,15 @@
-var app = document.getElementById('app')
-app.innerHTML = 'HELLO!'
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+var HelloWorld = React.createClass({
+	render: function() {
+		return (
+			<div>HelloWorld</div>
+		)
+	}
+});
+
+ReactDOM.render(
+	<HelloWorld />,
+	document.getElementById('app')
+)
