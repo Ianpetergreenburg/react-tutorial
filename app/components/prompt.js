@@ -8,7 +8,7 @@ var Prompt = React.createClass({
 		username: PropTypes.string.isRequired,
 		onSubmitUser: PropTypes.func.isRequired,
 		onUpdateUser: PropTypes.func.isRequired
-	}
+	},
 	render: function(){
 		return (
 			<div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={transparentBg}>
