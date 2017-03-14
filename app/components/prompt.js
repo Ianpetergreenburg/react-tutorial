@@ -1,6 +1,7 @@
 var React = require('react')
 var transparentBg = require('../styles/index.js').transparentBg
 var PropTypes = React.PropTypes
+var MainContainer = require('./MainContainer')
 
 var Prompt = React.createClass({
 	propTypes: {
@@ -11,7 +12,7 @@ var Prompt = React.createClass({
 	},
 	render: function(){
 		return (
-			<div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={transparentBg}>
+			<MainContainer>
 				<h1> {this.props.header} </h1>
 				<form onSubmit={this.props.onSubmitUser}>
 					<div className="form-group">
@@ -30,7 +31,7 @@ var Prompt = React.createClass({
 						</button>
 					</div>
 				</form>
-			</div>
+			</MainContainer>
 			)}
 	})
 
