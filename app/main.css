@@ -9,6 +9,6 @@
   opacity: 1;
 }
 
-appear-leave {
+.appear-leave {
   opacity: 0;
 }
